@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/gimg"
+            android:src="@drawable/common_nav_btn_menu"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:textSize="30sp"
+            android:layout_height="match_parent"
+            android:id="@+id/sos"/>
+       <!-- <Button
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:text="搜索"
+            android:id="@+id/ss"
+            />-->
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/simg"
+            android:src="@drawable/common_nav_btn_search"/>
+    </LinearLayout>
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/xrv"></com.jcodecraeer.xrecyclerview.XRecyclerView>
+</LinearLayout>
